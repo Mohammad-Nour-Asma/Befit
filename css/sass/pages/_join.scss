@@ -1,0 +1,15 @@
+.join {
+  .box {
+    .title {
+      @include title-text(3rem);
+    }
+    .para {
+      @include graph-text(1.5rem);
+    }
+    .join-btn {
+      @extend %main-button;
+      padding: 1rem 3rem;
+      font-size: 1.6rem;
+    }
+  }
+}

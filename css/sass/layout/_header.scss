@@ -1,0 +1,88 @@
+.header {
+  z-index: 1000;
+  padding: 3rem 1rem;
+  &.active {
+    padding: 2rem 0rem;
+    background-color: $white !important;
+    li {
+      a {
+        color: $black !important;
+      }
+    }
+    .menu-icon {
+      color: $black;
+    }
+    .logo {
+      color: $black !important;
+      font-weight: bold !important;
+    }
+  }
+  .container {
+    .nav {
+      width: fit-content;
+      li {
+        font-size: 2rem;
+        margin-left: 2rem;
+
+        a {
+          color: $white;
+        }
+        &:hover a {
+          color: $main_color !important;
+        }
+      }
+    }
+    .logo {
+      width: fit-content;
+      font-weight: bold !important;
+      font-size: 2.5rem;
+      color: $white;
+      span {
+        color: $main_color;
+      }
+    }
+  }
+  .menu-icon {
+    width: fit-content;
+    display: none;
+    font-size: 2.5rem;
+    color: $white;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      display: inline-block;
+    }
+    &.fa-times {
+      transform: rotate(180deg);
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 2rem;
+    &.active {
+      padding: 2rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header .nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 99%;
+    background-color: white;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100% !important;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    visibility: hidden;
+    &.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      visibility: visible;
+    }
+    li {
+      margin: 1rem 2rem;
+      a {
+        color: $black !important;
+      }
+    }
+  }
+}

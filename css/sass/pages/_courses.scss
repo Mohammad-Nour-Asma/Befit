@@ -1,0 +1,32 @@
+.courses {
+  color: white;
+  .card {
+    margin-bottom: 1.4rem;
+    border: $border;
+    background-color: $background_color;
+    &:hover img {
+      transform: scale(1.1);
+    }
+    .image {
+      height: 25rem !important;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .card-body {
+      padding: 2rem;
+      .card-title {
+        @include title-text(2.7rem);
+        padding-bottom: 1.5rem;
+      }
+      .courses-btn {
+        @extend %main-button;
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

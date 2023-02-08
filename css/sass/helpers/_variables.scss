@@ -1,0 +1,25 @@
+$main_color: #ff5421;
+$background_color: #1d0e15;
+$black: black;
+$white: white;
+$light_color: #ccc;
+$border: 1px solid rgba(255, 255, 255, 0.2);
+.orange {
+  color: $main_color;
+}
+
+%main-button {
+  background-color: $main_color;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  display: inline-block;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    color: $main_color;
+  }
+}
+.orange {
+  color: $main_color;
+  font-size: 2.5rem;
+}

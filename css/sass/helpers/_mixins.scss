@@ -1,0 +1,24 @@
+@mixin title-text($size) {
+  font-size: $size;
+  text-transform: capitalize;
+  color: $white;
+}
+@mixin graph-text($size) {
+  font-size: $size;
+  color: $light_color;
+  line-height: 2;
+}
+
+@mixin background($path) {
+  background-image: url($path);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+@mixin grid($num) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($num, 1fr));
+  gap: 2rem;
+}

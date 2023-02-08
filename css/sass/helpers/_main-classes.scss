@@ -1,0 +1,20 @@
+.main-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  span:last-child {
+    @include title-text(3.5rem);
+  }
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  color: white;
+  padding-bottom: 1rem;
+  i {
+    color: $main_color;
+    padding-right: 0.2rem;
+  }
+}

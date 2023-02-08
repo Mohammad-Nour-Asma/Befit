@@ -1,0 +1,27 @@
+.home {
+  @include background("../images/home-bg.jpg");
+  span {
+    font-size: 2.5rem;
+    color: $main_color;
+  }
+  .row {
+    margin-top: 2rem;
+    min-height: calc(100vh - 8rem);
+  }
+  h3 {
+    @include title-text(5rem);
+    padding-top: 1rem;
+    font-weight: 600;
+    @media (max-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+  img {
+  }
+  .home-btn {
+    @extend %main-button;
+    padding: 1rem 3.2rem;
+    margin-top: 0.8rem;
+    font-size: 1.7rem;
+  }
+}

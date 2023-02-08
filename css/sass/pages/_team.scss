@@ -1,0 +1,55 @@
+.team {
+  .container-box {
+    @include grid(30rem);
+    .box {
+      height: 50rem;
+      position: relative;
+      overflow: hidden;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &:hover .info {
+        left: -100%;
+      }
+      .info {
+        transition: 0.2s linear;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        padding: 1rem 1.8rem;
+        span:first-child {
+          color: $main_color;
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+        span:last-child {
+          color: $black;
+          font-size: 2rem;
+        }
+      }
+      &:hover .social {
+        left: 0;
+      }
+      .social {
+        background-color: white;
+        left: -100%;
+        position: absolute;
+        left: -100%;
+        transition: 0.2s linear;
+        padding: 1rem;
+        bottom: 0;
+        a {
+          font-size: 2rem;
+          margin: 1rem;
+          color: $black;
+          &:hover {
+            color: $main_color;
+          }
+        }
+      }
+    }
+  }
+}

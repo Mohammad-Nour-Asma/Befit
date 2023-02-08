@@ -1,0 +1,64 @@
+.pricing {
+  .container {
+    padding: 3.5rem 0;
+  }
+  text-align: center;
+  .box-container {
+    @include grid(27rem);
+    padding: 2rem;
+    @media (max-width: 992px) {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+    }
+    .plan {
+      background-color: $background_color;
+      border: $border;
+      padding: 2rem;
+      @media (min-width: 993px) {
+        &:nth-child(2) {
+          transform: scale(1.19);
+          background-color: $background_color;
+        }
+      }
+      .plan-name {
+        @include title-text(2rem);
+        display: block;
+      }
+      .price {
+        display: block;
+        @include title-text(2rem);
+        span {
+          @include title-text(6rem);
+          font-weight: bold;
+        }
+      }
+      .plan-btn {
+        @extend %main-button;
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+      }
+      .det {
+        padding: 0;
+        margin: 0;
+        padding-top: 1.5rem;
+        list-style: none;
+        li {
+          padding: 0.7rem 0;
+          i {
+            color: $main_color;
+            font-size: 1.8rem;
+            padding-right: 0.8rem;
+            font-weight: 900;
+            &.fa-times {
+              color: $white;
+            }
+          }
+          span {
+            @include graph-text(1.8rem);
+          }
+        }
+      }
+    }
+  }
+}

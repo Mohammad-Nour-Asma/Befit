@@ -1,0 +1,13 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "global";
+@import "./helpers/main-classes";
+@import "./layout/header";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/courses";
+@import "./pages/pricing";
+@import "./pages/join";
+@import "./pages/team";
+@import "./pages/blog";
+@import "./layout/footer";

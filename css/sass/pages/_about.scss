@@ -1,0 +1,39 @@
+.about {
+  .row {
+    .title {
+      @include title-text(3rem);
+    }
+    .para {
+      @include graph-text(1.5rem);
+    }
+    .details {
+      padding-top: 1rem;
+      li {
+        @include title-text(1.7rem);
+        margin: 1.5rem 0;
+        i {
+          color: $main_color;
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}
+.stats {
+  @include background("../images/counter-bg.jpg");
+  background-attachment: unset;
+  .row {
+    .info {
+      span:first-child {
+        font-size: 4.5rem;
+        color: $main_color;
+      }
+      span:last-child {
+        @include title-text(2rem);
+        @media (max-width: 991px) {
+          padding-bottom: 1.9rem;
+        }
+      }
+    }
+  }
+}
